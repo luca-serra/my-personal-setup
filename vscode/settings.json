@@ -45,7 +45,6 @@
     // "workbench.editorAssociations": {
     //     "*.md": "vscode.markdown.preview.editor"
     // },
-    "python.defaultInterpreterPath": "/Users/luca.serra/Documents/code/planner/venv",
     "notebook.output.textLineLimit": 100,
     "files.associations": {
         "*.dvc": "yaml",

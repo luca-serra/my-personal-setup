@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 
 # Create a service account with the given name and role and download the key to the current directory
 # Command: ./get_service_account_key.sh <service_account_name> <role>

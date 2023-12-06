@@ -1,6 +1,6 @@
 alias gst="git status"
 alias gfap="git fetch --all --prune"
-alias grob="bash $HOME/.additional_custom_script/.dontsource/grob.sh"
+alias grob="bash $HOME/.additional_custom_script/dont_source/grob.sh"
 function gad() {
 	git add "$1"
 }
