@@ -8,9 +8,6 @@ unzip custom-dev-setup.zip \
 
 mkdir ~/.additional_custom_script
 cp -r custom-dev-setup/terminal/additional_custom_script/* ~/.additional_custom_script/
-cat custom-dev-setup/terminal/.bashrc_suffix.sh >> ~/.bashrc
-
-rm -r custom-dev-setup
 
 # 2. Install Oh my zsh with powerlevel10k
 
@@ -31,3 +28,6 @@ else
     fi
     echo "ZSH_THEME has been set to $desired_theme"
 fi
+
+cat custom-dev-setup/terminal/.bashrc_suffix.sh >> ~/.zshrc
+rm -r custom-dev-setup
