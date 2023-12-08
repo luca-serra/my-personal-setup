@@ -8,11 +8,13 @@ Contains the code used to define custom aliases for the shell.
 
 Contains useful scripts used to simplify tasks.
 
-### Install custom aliases on a new Linux machine
+### Install custom setup on a new Linux machine
+
+This script enables to install custom aliases and [Powerlevel10k](https://github.com/romkatv/powerlevel10k) on a new Linux machine.
 
 1. Copy the `useful_scripts/install_on_vm.sh` script to the new machine:
 
-(example for GCP VM)
+(**Example for GCP VM**)
 
 ```bash
 gcloud compute scp useful_scripts/install_on_vm.sh <VM_NAME>:~/ --zone <VM_ZONE>
