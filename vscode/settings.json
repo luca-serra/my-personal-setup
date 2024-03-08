@@ -1,29 +1,31 @@
 {
     "workbench.colorCustomizations": {
+        "terminal.foreground": "#ffffff",
         "activityBar.background": "#3E067E",
         "titleBar.activeBackground": "#5708B1",
-        "titleBar.activeForeground": "#FDFBFF"
+        "titleBar.activeForeground": "#fbfffd"
     },
-    "window.zoomLevel": 1,
     "jupyter.askForKernelRestart": false,
     "git.confirmSync": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
-    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.defaultProfile.osx": "zsh",
-    "python.linting.flake8Enabled": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "editor.formatOnSave": true,
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "never",
+            "source.organizeImports": "never",
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    "ruff.lint.args": [
         "--line-length",
         "100"
     ],
-    "isort.args": [
-        "--profile",
-        "black"
-    ],
-    "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
         "*": true,
         "yaml": true,
@@ -31,13 +33,6 @@
         "markdown": true
     },
     "git.suggestSmartCommit": false,
-    "[python]": {
-        "editor.formatOnType": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true
-        },
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
     "[terraform]": {
         "editor.tabSize": 2
     },
@@ -53,4 +48,19 @@
     "window.commandCenter": false,
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.activityBar.orientation": "vertical",
+    "githubPullRequests.commentExpandState": "collapseAll",
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.venvFolders": [
+        "venv"
+    ],
+    "python.venvPath": "$pwd/venv",
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "venv": true,
+        ".venv": true
+    },
+    "window.zoomLevel": 1.1232594556959365
 }
