@@ -2,7 +2,7 @@
 
 ## Aliases
 
-Contains the code used to define custom aliases for the shell.
+Contains the code used to define custom aliases for the shell (mainly git aliases).
 
 ## Useful scripts
 
