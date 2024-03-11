@@ -1,5 +1,12 @@
 # My personal setup
 
+This repository contains useful things I use daily in my work as a ML Engineer/Data Scientist.
+
+Featuring:
+- Aliases (especially for commit conventions)
+- Useful bash scripts
+- VSCode (Cursor) extensions
+
 ## Aliases
 
 Contains the code used to define custom aliases for the shell (mainly git aliases).
