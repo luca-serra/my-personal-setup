@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+
+git fetch --all --prune
 # This script will delete the local branches which are not present in remote
 removed_branches=$(git branch -vv | grep ': gone]'|  grep -v "\*" | awk '{ print $1; }')
 if [ -z "$removed_branches" ]; then
