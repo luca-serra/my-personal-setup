@@ -1,4 +1,5 @@
 alias gst="git status"
+alias gp="git push"
 alias gfap="git fetch --all --prune"
 alias grob="bash $HOME/.additional_custom_script/dont_source/grob.sh"
 function gad() {
@@ -37,6 +38,9 @@ function gfix() {
 }
 function gdoc() {
     gmessage "doc" "$*"
+}
+function gcom() {
+	git commit -m "$1"
 }
 function gfea() {
     gmessage "feat" "$*"
